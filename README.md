@@ -1,5 +1,11 @@
 # React + Vite
 
+
+
+·!!!!!Profesor, realice +17 commits que no se ven ya que tuve que descargar nuevamente el progreso desde github ya que elimine codigo sin querer del original, agregare una foto con los distintos deployments a vercel que contiene la descripcion de los commits!!!!!!!!·
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
