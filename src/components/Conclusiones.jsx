@@ -110,6 +110,45 @@ function Conclusiones() {
           personales de los ciudadanos chilenos.
         </p>
       </div>
+<div className="mt-8 border border-slate-200 rounded-lg overflow-hidden">
+        <div className="bg-slate-800 px-5 py-3">
+          <p className="text-white font-bold text-sm">Impacto global del caso</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200">
+          {[
+            {
+              icono: '⚖️',
+              titulo: 'Impacto legal',
+              items: ['Multa FTC: $575M USD', 'Multa ICO: £500K', '50 estados demandaron', 'CEO y CISO renunciaron'],
+            },
+            {
+              icono: '🌍',
+              titulo: 'Impacto legislativo',
+              items: ['Aceleró reforma Ley 19.628 → Ley 21.719', 'Reforzó aplicación GDPR en UK', 'Nuevas guías NIST post-incidente', 'Mayor escrutinio a CRAs'],
+            },
+            {
+              icono: '🔒',
+              titulo: 'Impacto en la industria',
+              items: ['Estándar de 30 días para parches críticos', 'Obligatoriedad de IDS en sector financiero', 'Protocolos de notificación 72h', 'Auditorías de segmentación de red'],
+            },
+          ].map((col) => (
+            <div key={col.titulo} className="p-5">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-2xl">{col.icono}</span>
+                <p className="font-bold text-slate-800 text-sm">{col.titulo}</p>
+              </div>
+              <ul className="space-y-2">
+                {col.items.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
+                    <span className="text-green-500 mt-0.5 font-bold">✓</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
